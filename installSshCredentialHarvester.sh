@@ -3,7 +3,7 @@
 # Logs SSH Credentials. Tested on Kali Linux.
 
 # Set the install directory
-installDirectory="/opt/jamesm0rr1s/SSH-Credential-Harvester/OpenSSH"
+installDirectory="/opt/Central-InfoSec/SSH-Credential-Harvester/OpenSSH"
 
 # Create the install directory
 mkdir -p $installDirectory
