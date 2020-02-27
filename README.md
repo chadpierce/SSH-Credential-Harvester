@@ -6,23 +6,23 @@ SSH Credential Harvester is a penetration testing and red teaming tool automates
 
 Clone the GitHub repository
 ```
-git clone https://github.com/jamesm0rr1s/SSH-Credential-Harvester /opt/jamesm0rr1s/SSH-Credential-Harvester
+git clone https://github.com/centralinfosec/SSH-Credential-Harvester /opt/Central-InfoSec/SSH-Credential-Harvester
 ```
 
 ## Usage
 
 Run the following commands to install:
 ```
-chmod +x /opt/jamesm0rr1s/SSH-Credential-Harvester/installSshCredentialHarvester.sh
-/opt/jamesm0rr1s/SSH-Credential-Harvester/installSshCredentialHarvester.sh
+chmod +x /opt/Central-InfoSec/SSH-Credential-Harvester/installSshCredentialHarvester.sh
+/opt/Central-InfoSec/SSH-Credential-Harvester/installSshCredentialHarvester.sh
 ```
 
 ## Viewing SSH Credentials
 
 Run the following commands to view any logged SSH credentials:
 ```
-chmod +x /opt/jamesm0rr1s/SSH-Credential-Harvester/getCredentialsFromSshLogs.sh
-/opt/jamesm0rr1s/SSH-Credential-Harvester/getCredentialsFromSshLogs.sh
+chmod +x /opt/Central-InfoSec/SSH-Credential-Harvester/getCredentialsFromSshLogs.sh
+/opt/Central-InfoSec/SSH-Credential-Harvester/getCredentialsFromSshLogs.sh
 ```
 
 ## Example Screenshot of Output from "getCredentialsFromSshLogs.sh"
