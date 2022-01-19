@@ -20,6 +20,9 @@ sed -i "s/# deb-src/deb-src/g" /etc/apt/sources.list
 # Update package list to pick up new repository's package information
 apt update
 
+# install dependency
+apt install fakeroot
+
 # Ignore prompt to restart services
 export DEBIAN_FRONTEND=noninteractive
 
