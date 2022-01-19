@@ -18,10 +18,10 @@ apt install -yq dpkg-dev
 sed -i "s/# deb-src/deb-src/g" /etc/apt/sources.list
 
 # Update package list to pick up new repository's package information
-apt update
+apt update -y
 
 # install dependency
-apt install fakeroot
+apt install -y fakeroot
 
 # Ignore prompt to restart services
 export DEBIAN_FRONTEND=noninteractive
@@ -66,5 +66,9 @@ debFile=`ls $setupDirectory/../openssh-sftp-server_*.deb`
 # Install the sftp server
 dpkg -i $debFile
 
+# enable pw auth - replacing and appending config to cover all bases
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
+
 # Start OpenSSH
-service ssh start
+systemctl restart ssh
